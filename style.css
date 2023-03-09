@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto+Mono:400,700&display=swap');
 
-html{
+html {
     font-family: "Roboto";
     background-color: #E5E5E5;
 }
@@ -30,13 +30,16 @@ html{
 .colormedium {
     line-height: 150%;
     margin-top: 28px;
+    width: 400px;
 }
+
 /******/
 
 .button {
     background-color: #072AC8;
     font-size: 17px;
     color: #FFF;
+    width: 150px;
 }
 
 .p24 {
@@ -71,8 +74,10 @@ header img {
 
 .navbar {
     display: flex;
-    justify-content: space-around;
-    margin: 200px;
+    justify-content: space-between;
+    top: 87px;
+    gap: 60px;
+
 }
 
 .navbar a {
@@ -91,8 +96,9 @@ header img {
 nav ul {
     list-style: none;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     width: 100%;
+    gap: 60px;
 }
 
 main {
@@ -107,7 +113,10 @@ main {
 
 .bannertext {
     line-height: 71px;
-} 
+    top: 200px;
+    position: relative;
+    width: 530px;
+}
 
 .title {
     font-size: 60px;
@@ -120,15 +129,50 @@ main {
 .bannerimage {
     background-image: url("imagesmid/hero-section/hero-image.png");
     background-repeat: no-repeat;
-    transform: rotate(2deg);
-    background-size: 100%;
+    background-size: contain;
     position: relative;
-    width: 615px;
+    width: 600px;
+    display: block;
+    top: 100px;
+}
+
+.bannerimage img:first-child {
+    width: 190px;
+    position: absolute;
+}
+
+.bannerimage img:last-child {
+    width: 190px;
+    position: absolute;
+    top: 365px;
+    height: 190px;
+    left: 230px;
 }
 
 .clients {
     display: flex;
     justify-content: space-between;
     width: 100%;
-    margin-top: 130px;
+    margin-top: 270px;
+    height: 30px;
+    margin-bottom: 200px;
+}
+
+.projects {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.projects figure {
+    margin: 0;
+}
+
+.projects div {
+    height: 445px;
+}
+
+.projects img {
+    width: 340px;
+    height: 240px;
 }
