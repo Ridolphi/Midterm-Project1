@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto+Mono:400,700&display=swap');
+
+html{
+    font-family: "Roboto";
+    background-color: #E5E5E5;
+}
+
+/*************** layout tokens ***************/
+
+.h1b {
+    font-size: 60px;
+    font-weight: bold;
+    color: #292E47;
+}
+
+.h3b {
+    font-size: 40px;
+    font-weight: bold;
+    color: #292E47;
+}
+
+.bt20 {
+    font-size: 20px;
+    line-height: 150%;
+    color: #6B708D;
+}
+
+/*** ajeitar p section 1 *****/
+
+.colormedium {
+    line-height: 150%;
+    margin-top: 28px;
+}
+/******/
+
+.button {
+    background-color: #072AC8;
+    font-size: 17px;
+    color: #FFF;
+}
+
+.p24 {
+    font-size: 24px;
+    color: #292E47;
+}
+
+.pb17 {
+    font-size: 17px;
+    color: #072AC8;
+}
+
+.p17 {
+    font-size: 17px;
+    color: #6B708D;
+}
+
+
+
+/********** -- ***********/
+
+header {
+    position: relative;
+    width: 1100px;
+    margin: 0 auto;
+    height: 52px;
+}
+
+header img {
+    width: 61px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-around;
+    margin: 200px;
+}
+
+.navbar a {
+    text-decoration: none;
+}
+
+.contact {
+    height: 52px;
+    width: 150px;
+    color: #FFF;
+    line-height: 52px;
+    text-align: center;
+    font-size: 17px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+main {
+    width: 1100px;
+    margin: 0 auto;
+}
+
+.banner {
+    display: flex;
+    width: 100%;
+}
+
+.bannertext {
+    line-height: 71px;
+} 
+
+.title {
+    font-size: 60px;
+    font-weight: bold;
+    color: #292E47;
+
+
+}
+
+.bannerimage {
+    background-image: url("imagesmid/hero-section/hero-image.png");
+    background-repeat: no-repeat;
+    transform: rotate(2deg);
+    background-size: 100%;
+    position: relative;
+    width: 615px;
+}
+
+.clients {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 130px;
+}
