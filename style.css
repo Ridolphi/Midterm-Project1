@@ -65,6 +65,10 @@ header {
     height: 52px;
 }
 
+header img {
+    width: 61px;
+}
+
 .navbar {
     display: flex;
     justify-content: space-around;
@@ -84,10 +88,6 @@ header {
     font-size: 17px;
 }
 
-nav {
-    
-}
-
 nav ul {
     list-style: none;
     display: flex;
@@ -103,11 +103,10 @@ main {
 .banner {
     display: flex;
     width: 100%;
-
 }
 
 .bannertext {
-
+    line-height: 71px;
 } 
 
 .title {
@@ -120,7 +119,11 @@ main {
 
 .bannerimage {
     background-image: url("imagesmid/hero-section/hero-image.png");
-
+    background-repeat: no-repeat;
+    transform: rotate(2deg);
+    background-size: 100%;
+    position: relative;
+    width: 615px;
 }
 
 .clients {
