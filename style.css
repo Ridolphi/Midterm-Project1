@@ -2,7 +2,7 @@
 
 html {
     font-family: "Roboto";
-    background-color: #E5E5E5;
+    background-color: #F2F4FC;
 }
 
 /*************** layout tokens ***************/
@@ -10,7 +10,7 @@ html {
 .h1b {
     font-size: 60px;
     font-weight: bold;
-    color: #292E47;
+    color: #F4F6FC;
 }
 
 .h3b {
@@ -40,6 +40,10 @@ html {
     font-size: 17px;
     color: #FFF;
     width: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    line-height: 52px;
 }
 
 .p24 {
@@ -56,6 +60,7 @@ html {
     font-size: 17px;
     color: #6B708D;
 }
+
 
 
 
@@ -82,15 +87,6 @@ header img {
 
 .navbar a {
     text-decoration: none;
-}
-
-.contact {
-    height: 52px;
-    width: 150px;
-    color: #FFF;
-    line-height: 52px;
-    text-align: center;
-    font-size: 17px;
 }
 
 nav ul {
@@ -175,4 +171,164 @@ main {
 .projects img {
     width: 340px;
     height: 240px;
+}
+
+.testimony {
+    background-image: url("imagesmid/testimonial-section/orbit.png");
+    background-color: #292E47;
+    background-size: cover;
+    width: 1320px;
+    height: 632px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.testimony h3 {
+    color: #F4F6FC;
+    height: 47px;
+    line-height: 47px;
+    padding: 130px 0 55px;
+    text-align: center;
+}
+
+.testimony p {
+    font-size: 24px;
+    line-height: 160%;
+    color: #FFC600;
+    text-align: center;
+    margin: 0 135px;
+}
+
+.testimony figure {
+    width: 176px;
+    margin: 80px 620px;
+    display: flex;
+
+}
+
+.testimony figure img {
+    width: 55px;
+    height: 55px;
+    text-align: center;
+    border-radius: 50%;
+}
+
+.testimony figcaption {
+    width: 121px;
+    padding: 10px 0 0 10px;
+}
+
+.testimony h5 {
+    font-size: 17px;
+    color: #A2D6F9;
+    margin: 0;
+}
+
+.testimony h6 {
+    font-size: 13px;
+    color: #F4F6FC;
+    margin: 0;
+}
+
+.memoji {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+}
+
+.memoji img {
+    width: 150px;
+    height: 150px;
+    position: absolute;
+}
+
+.memoji img:nth-child(1) {
+    top: 70px;
+    left: 70px;
+}
+
+.memoji img:nth-child(2) {
+    bottom: 70px;
+    left: 70px;
+}
+
+.memoji img:nth-child(3) {
+    top: 70px;
+    right: 70px;
+}
+
+.memoji img:nth-child(4) {
+    bottom: 70px;
+    right: 70px;
+}
+
+/**********************************/
+.recent {
+    margin: 200px 0 85px 347px;
+    width: 1100px;
+}
+
+.services {
+    width: 1100px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.services div {
+    background-color: #FFFFFF;
+    height: 380px;
+    width: 340px;
+}
+
+.services figure {
+    margin: 32px;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-color: #ECF7FF;
+}
+
+.services img {
+    width: 30px;
+    height: 30px;
+    margin: 25px;
+   
+}
+
+.services h4 {
+    width: 269px;
+    margin: 30px 0 20px 30px;
+}
+
+.services p {
+    width: 280px;
+    height: 90px;
+    margin: 20px 0 35px 30px;
+}
+
+.services a {
+    margin: 38px 30px;
+}
+
+/******************************/
+
+.email {
+    width: 1320px;
+    height: 500px;
+    background-color: #FFC600;
+
+}
+
+.email h3 {
+    width: 500px;
+    text-align: center;
+    margin: 136px 0 20px;
+}
+
+.email p {
+    text-align: center;
+    margin: 0 0 50px;
 }
