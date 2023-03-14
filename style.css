@@ -7,6 +7,7 @@ html {
 
 /*************** layout tokens ***************/
 
+
 .h1b {
     font-size: 60px;
     font-weight: bold;
@@ -50,15 +51,6 @@ html {
     color: #292E47;
     font-weight: 400;
 }   
-/*** ajeitar p section 1 *****/
-
-.colormedium {
-    line-height: 150%;
-    margin-top: 28px;
-    width: 400px;
-}
-
-/****** reutilizaveis ******/
 
 .button {
     background-color: #072AC8;
@@ -72,39 +64,10 @@ html {
     text-decoration: none;
 }
 
-footer .logo {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px;
-}
-
-.logo-left img {
-    height: 30px;
-    margin-top: 190px;
-    margin-left: 80px;
-}
-
-.logo p {
-    margin: 30px 115px;
-}
-
-.links ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    flex-wrap: wrap;
-    
-}
-
-.links ul li {
-    margin-right: 20px;
-    text-decoration: 10%;
-}
 
 
-/********** -- ***********/
+/****************** -- *********************/
+
 
 header {
     position: relative;
@@ -122,7 +85,7 @@ header img {
     justify-content: space-between;
     top: 87px;
     gap: 60px;
-
+    
 }
 
 .navbar a {
@@ -154,12 +117,28 @@ main {
     width: 530px;
 }
 
+.bannertext a {
+    text-decoration: none;
+    list-style: none;
+    margin: 5px 30px 0 0;
+}
+
+.bannertext p {
+    line-height: 150%;
+    margin-top: 28px;
+    width: 400px;
+}
+
 .title {
     font-size: 60px;
     font-weight: bold;
     color: #292E47;
+    
+}
 
-
+.banner-footer {
+    margin-top: 40px;
+    float: left;
 }
 
 .bannerimage {
@@ -169,27 +148,30 @@ main {
     position: relative;
     width: 600px;
     display: block;
-    top: 100px;
+    top: 170px;
 }
 
 .bannerimage img:first-child {
-    width: 190px;
-    position: absolute;
+    width: 215px;
+    height: 215px;
+    position: relative;
+    right: 25px;
+
 }
 
 .bannerimage img:last-child {
-    width: 190px;
+    width: 215px;
     position: absolute;
     top: 365px;
-    height: 190px;
-    left: 230px;
+    height: 215px;
+    left: 270px;
 }
 
 .clients {
     display: flex;
     justify-content: space-between;
     width: 100%;
-    margin-top: 270px;
+    margin-top: 360px;
     height: 30px;
     margin-bottom: 200px;
 }
@@ -198,17 +180,21 @@ main {
     display: flex;
     justify-content: space-between;
     width: 100%;
+    margin: 200px auto;
 }
 
 .projects figure {
     margin: 0;
 }
 
-.projects div {
-    height: 445px;
-}
 
 .projects img {
+    width: 340px;
+    height: 240px;
+}
+
+.projects figcaption {
+    background-color: #FFFFFF;
     width: 340px;
     height: 240px;
 }
@@ -219,7 +205,7 @@ main {
     background-size: cover;
     width: 1320px;
     height: 632px;
-    margin: 0 auto;
+    margin: 200PX auto;
     position: relative;
 }
 
@@ -305,10 +291,6 @@ main {
 }
 
 /**********************************/
-.recent {
-    margin: 200px 0 85px;
-    width: 1100px;
-}
 
 .services {
     width: 1100px;
@@ -358,11 +340,11 @@ main {
     margin: 38px 30px;
 }
 
-/******************************/
+/*************              FOOTER           *****************/
 
 footer {
     width: 1320px;
-    margin: 200px 255px;
+    margin: 200px auto;
 } 
 
 .email {
@@ -390,9 +372,9 @@ footer {
 
 .email input {
     width: 315px;
-    height: 85px;
-    margin: 15px 15px;
-    padding-left: 50px;
+    height: 75px;
+    margin-right: 25px;
+    padding-left: 70px;
 }
 
 .email label {
@@ -408,8 +390,59 @@ footer {
 
 .email a {
     width: 190px;
-    height: 86px;
+    height: 75px;
 }
 
-/*************************/
+/************* layout footer   ************/
+
+.footer-bar {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    margin: 200px 0 100px;
+}
+
+.logo-footer {
+    width: 145px;
+    height: 112px;
+}
+
+.logo-footer img {
+    width: 100px;
+    height: 30px;
+}
+
+.logo-footer p {
+    margin-top: 30px;
+    width: 260px;
+    height: 50px;
+    line-height: 150%;
+}
+
+.links {
+    width: 435px;
+    height: 112px;
+}
+
+
+.links ul {
+    width: 100%;
+    display: grid;
+    justify-items: start;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(2,1fr);
+    grid-gap: 60px; 
+    line-height: 95%;    
+}
+
+.links ul li {
+   list-style: none;
+   text-align: center;
+}
+
+.links ul li a {
+    text-decoration: none;
+}
+
+/********** END lahyout footer ***********/
 
