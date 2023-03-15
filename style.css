@@ -16,7 +16,6 @@ html {
 
 .h3b {
     font-size: 40px;
-    font-weight: bold;
     color: #292E47;
 }
 
@@ -25,9 +24,7 @@ html {
     font-size: 17px;
     color: #FFF;
     width: 150px;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
+    text-align: center;
     line-height: 52px;
     text-decoration: none;
 }
@@ -67,12 +64,23 @@ html {
     color: #6B708D;
 }
 
+.right {
+    text-align: right;
+}
+
+.container {
+    width: 1100px;
+    margin: 0 auto;
+}
+
+
 /****************** -- *********************/
 
 
 header {
     position: relative;
     width: 1440px;
+    height: 122px;
     margin: 0 auto;
 }
 
@@ -83,9 +91,9 @@ header img {
 .navbar {
     display: flex;
     justify-content: space-between;
-    top: 87px;
-    gap: 60px;
     width: 1100px;
+    height: 50px;
+    margin-top: 115px;
     
 }
 
@@ -101,102 +109,132 @@ nav ul {
     gap: 60px;
 }
 
+/****************** ************/
+
 main {
-    width: 1100px;
+    width: 1440px;
     margin: 0 auto;
+    
 }
 
 .banner {
     display: flex;
-    width: 100%;
+    width: 1100px;
+    height: 650px;
+    margin: 0 auto;
+    padding-top: 100px;
 }
 
 .bannertext {
-    line-height: 71px;
-    top: 200px;
-    position: relative;
     width: 530px;
-}
-
-.bannertext a {
-    text-decoration: none;
-    list-style: none;
-    margin: 5px 30px 0 0;
+    height: 422px;
+    margin-top: 40px;
 }
 
 .bannertext p {
-    line-height: 150%;
-    margin-top: 28px;
-    width: 400px;
+    margin-top: 30px;
+    width: 435px;
+    height: 90px;
 }
 
-
-.banner-footer {
+.bannertext-footer {
+    width: 290px;
+    height: 52px;
     margin-top: 40px;
-    float: left;
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+}
+
+.bannertext-footer a {
+    text-decoration: none;
 }
 
 .bannerimage {
     background-image: url("imagesmid/hero-section/hero-image.png");
     background-repeat: no-repeat;
     background-size: contain;
-    position: relative;
-    width: 600px;
-    display: block;
-    top: 170px;
+    position: abosule;
+    height: 632px;
+    width: 508px;
+    display: flex;
+    justify-content: space-between;
 }
 
 .bannerimage img:first-child {
-    width: 215px;
-    height: 215px;
+    width: 310px;
+    height: 335px;
     position: relative;
-    right: 25px;
+    right: 80px;
+    align-self: flex-start;
 
 }
 
 .bannerimage img:last-child {
-    width: 215px;
-    position: absolute;
-    top: 365px;
-    height: 215px;
-    left: 270px;
+    width: 280px;
+    height: 280px;
+    position: relative;
+    top: 390px;
+    align-self: flex-start;
 }
 
 .clients {
     display: flex;
     justify-content: space-between;
-    width: 100%;
-    margin-top: 360px;
+    align-items: center;
+    width: 1100px;
+    height: 96px;
+    margin: 0 auto;
+    padding: 100px 0 200px 0;
+}
+
+.clients-div {
+    width: 1054px;
+    height: 32px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.clients-div img {
+    width: 105px;
     height: 30px;
-    margin-bottom: 200px;
 }
 
 /***************/
 
-
-.projects {
-    display: flex;
-    justify-content: space-between;
+.recent {
     width: 1100px;
     height: 560px;
-}
-
-
-.projects figure {
     margin: 0 auto;
 }
 
+.projects {
+    width: 1100px;
+    height: 560px;
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+}
 
-.projects img {
+.projects div {
+    margin: 0 5px;
+}
+
+.projects figure {
+   margin: 0;
+}
+
+.projects figure img {
     width: 340px;
-    height: 244px;
+    height: 240px;
 }
 
 .projects figcaption {
     background-color: #FFFFFF;
     width: 340px;
-    height: 210px;
+    height: 240px;
     position: absolute;
+    margin: 0;
 }
 
 .projects figcaption h4 {
@@ -210,6 +248,8 @@ main {
 
 
 /*************/
+
+
 .testimony {
     background-image: url("imagesmid/testimonial-section/orbit.png");
     background-color: #292E47;
@@ -349,6 +389,7 @@ main {
 
 .services a {
     margin: 38px 30px;
+    text-decoration: none;
 }
 
 /*************              FOOTER           *****************/
@@ -453,6 +494,7 @@ footer {
 
 .links ul li a {
     text-decoration: none;
+    color: #6B708D;
 }
 
 /********** END lahyout footer ***********/
