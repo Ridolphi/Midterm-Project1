@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto+Mono:400,700&display=swap');
+Open@import url('https://fonts.googleapis.com/css?family=Roboto+Mono:400,700&display=swap');
 
 html {
     font-family: "Roboto";
@@ -154,7 +154,7 @@ main {
     background-image: url("imagesmid/hero-section/hero-image.png");
     background-repeat: no-repeat;
     background-size: contain;
-    position: abosule;
+    position: relative;
     height: 632px;
     width: 508px;
     display: flex;
