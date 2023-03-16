@@ -2,7 +2,7 @@
 
 html {
     font-family: "Roboto";
-    background-color: #F2F4FC;
+    background-color: #E5E5E5;
 }
 
 /*************** layout tokens ***************/
@@ -11,29 +11,22 @@ html {
 .h1b {
     font-size: 60px;
     font-weight: bold;
-    color: #F4F6FC;
+    color: #292E47;
 }
 
 .h3b {
     font-size: 40px;
-    font-weight: bold;
     color: #292E47;
 }
 
-.bt20 {
-    font-size: 20px;
-    line-height: 150%;
-    color: #6B708D;
-}
-
-.p20 {
-    font-size: 20px;
-    color: #292E47;
-}
-
-.p24 {
-    font-size: 24px;
-    color: #292E47;
+.button {
+    background-color: #072AC8;
+    font-size: 17px;
+    color: #FFF;
+    width: 150px;
+    text-align: center;
+    line-height: 52px;
+    text-decoration: none;
 }
 
 .pb17 {
@@ -49,21 +42,36 @@ html {
 .t17 {
     font-size: 17px;
     color: #292E47;
-    font-weight: 400;
-}   
-
-.button {
-    background-color: #072AC8;
-    font-size: 17px;
-    color: #FFF;
-    width: 150px;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    line-height: 52px;
-    text-decoration: none;
 }
 
+.bt20 {
+    font-size: 20px;
+    color: #6B708D;
+}
+
+.p20 {
+    font-size: 20px;
+    color: #292E47;
+}
+
+.p24 {
+    font-size: 24px;
+    color: #292E47;
+}
+
+.bt24 {
+    font-size: 24px;
+    color: #6B708D;
+}
+
+.right {
+    text-align: right;
+}
+
+.container {
+    width: 1100px;
+    margin: 0 auto;
+}
 
 
 /****************** -- *********************/
@@ -71,9 +79,9 @@ html {
 
 header {
     position: relative;
-    width: 1100px;
+    width: 1440px;
+    height: 122px;
     margin: 0 auto;
-    height: 52px;
 }
 
 header img {
@@ -83,8 +91,9 @@ header img {
 .navbar {
     display: flex;
     justify-content: space-between;
-    top: 87px;
-    gap: 60px;
+    width: 1100px;
+    height: 50px;
+    margin-top: 115px;
     
 }
 
@@ -100,45 +109,45 @@ nav ul {
     gap: 60px;
 }
 
+/****************** ************/
+
 main {
-    width: 1100px;
+    width: 1440px;
     margin: 0 auto;
+    
 }
 
 .banner {
     display: flex;
-    width: 100%;
+    width: 1100px;
+    height: 650px;
+    margin: 0 auto;
+    padding-top: 100px;
 }
 
 .bannertext {
-    line-height: 71px;
-    top: 200px;
-    position: relative;
     width: 530px;
-}
-
-.bannertext a {
-    text-decoration: none;
-    list-style: none;
-    margin: 5px 30px 0 0;
+    height: 422px;
+    margin-top: 40px;
 }
 
 .bannertext p {
-    line-height: 150%;
-    margin-top: 28px;
-    width: 400px;
+    margin-top: 30px;
+    width: 435px;
+    height: 90px;
 }
 
-.title {
-    font-size: 60px;
-    font-weight: bold;
-    color: #292E47;
-    
-}
-
-.banner-footer {
+.bannertext-footer {
+    width: 290px;
+    height: 52px;
     margin-top: 40px;
-    float: left;
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+}
+
+.bannertext-footer a {
+    text-decoration: none;
 }
 
 .bannerimage {
@@ -146,49 +155,70 @@ main {
     background-repeat: no-repeat;
     background-size: contain;
     position: relative;
-    width: 600px;
-    display: block;
-    top: 170px;
+    height: 632px;
+    width: 508px;
+    display: flex;
+    justify-content: space-between;
 }
 
 .bannerimage img:first-child {
-    width: 215px;
-    height: 215px;
+    width: 310px;
+    height: 335px;
     position: relative;
-    right: 25px;
+    right: 80px;
+    align-self: flex-start;
 
 }
 
 .bannerimage img:last-child {
-    width: 215px;
-    position: absolute;
-    top: 365px;
-    height: 215px;
-    left: 270px;
+    width: 280px;
+    height: 280px;
+    position: relative;
+    top: 390px;
+    align-self: flex-start;
 }
 
 .clients {
     display: flex;
     justify-content: space-between;
-    width: 100%;
-    margin-top: 360px;
-    height: 30px;
-    margin-bottom: 200px;
+    align-items: center;
+    width: 1100px;
+    height: 96px;
+    margin: 0 auto;
+    padding: 100px 0 200px 0;
 }
 
-.projects {
+.clients-div {
+    width: 1054px;
+    height: 32px;
     display: flex;
     justify-content: space-between;
-    width: 100%;
-    margin: 200px auto;
+}
+
+.clients-div img {
+    width: 105px;
+    height: 30px;
+}
+
+/***************/
+
+.projects {
+    width: 1100px;
+    height: 560px;
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.projects div {
+    margin: 0 5px;
 }
 
 .projects figure {
-    margin: 0;
+   margin: 0;
 }
 
-
-.projects img {
+.projects figure img {
     width: 340px;
     height: 240px;
 }
@@ -197,7 +227,22 @@ main {
     background-color: #FFFFFF;
     width: 340px;
     height: 240px;
+    position: absolute;
+    margin: 0;
 }
+
+.projects figcaption h4 {
+    margin: 30px 0 10px 30px;
+}
+
+.projects figcaption p,
+.projects figcaption a {
+    margin: 30px 0 54px 30px;
+}
+
+
+/*************/
+
 
 .testimony {
     background-image: url("imagesmid/testimonial-section/orbit.png");
@@ -294,7 +339,7 @@ main {
 
 .services {
     width: 1100px;
-    margin: 0 auto;
+    margin: 200px auto;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -305,7 +350,7 @@ main {
 }
 
 .services div {
-    background-color: #FFFFFF;
+    background-color: white;
     height: 380px;
     width: 340px;
 }
@@ -338,6 +383,7 @@ main {
 
 .services a {
     margin: 38px 30px;
+    text-decoration: none;
 }
 
 /*************              FOOTER           *****************/
@@ -365,32 +411,36 @@ footer {
 }
 
 .email form {
-    display: flex;
-    justify-content: center;
-    align-items: baseline;
+    position: relative;
+    margin: 0 auto;
+    width: 612px;
+    overflow: hidden;
 }
 
 .email input {
-    width: 315px;
+    width: 320px;
     height: 75px;
+    padding-left:70px;
     margin-right: 25px;
-    padding-left: 70px;
 }
 
 .email label {
-    position: relative;
+    position: absolute;
+    left: 25px;
+    top: 25px;
 }
 
 .email label img {
-    left: 60px;
-    top: 8px;
     position: relative;
     
 }
 
 .email a {
+    line-height: 80px;
     width: 190px;
-    height: 75px;
+    height: 80px;
+    float: right;
+    display: block;
 }
 
 /************* layout footer   ************/
@@ -442,7 +492,7 @@ footer {
 
 .links ul li a {
     text-decoration: none;
+    color: #6B708D;
 }
 
-/********** END lahyout footer ***********/
-
+/********** END layout footer ***********/
