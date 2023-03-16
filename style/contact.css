@@ -40,3 +40,45 @@
     height: 80px;
     margin-top: 40px;
 }
+
+.menu-toggle {
+    display: none;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.navbar nav .menu-toggle {
+    display: block;
+  }
+
+
+
+/*****    media query
+
+  .navbar nav ul.open {
+    display: block;
+  }
+
+  .menu-toggle {
+    position: absolute;
+    top: 0; 
+    right: 0; 
+    padding: 10px;
+    background-color: #333; 
+    color: #fff; 
+    border: none;
+    cursor: pointer;
+}
+
+.menu-toggle:focus {
+    outline: none;
+}
+
+
+  @media (max-width: 768px) {
+    .navbar nav ul {
+     display: none;
+    }
+
+**/
+
