@@ -1,8 +1,8 @@
-Open@import url('https://fonts.googleapis.com/css?family=Roboto+Mono:400,700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Roboto+Mono:400,700&display=swap');
 
 html {
     font-family: "Roboto";
-    background-color: #F2F4FC;
+    background-color: #E5E5E5;
 }
 
 /*************** layout tokens ***************/
@@ -202,12 +202,6 @@ main {
 
 /***************/
 
-.recent {
-    width: 1100px;
-    height: 560px;
-    margin: 0 auto;
-}
-
 .projects {
     width: 1100px;
     height: 560px;
@@ -356,7 +350,7 @@ main {
 }
 
 .services div {
-    background-color: #FFFFFF;
+    background-color: white;
     height: 380px;
     width: 340px;
 }
@@ -417,32 +411,36 @@ footer {
 }
 
 .email form {
-    display: flex;
-    justify-content: center;
-    align-items: baseline;
+    position: relative;
+    margin: 0 auto;
+    width: 612px;
+    overflow: hidden;
 }
 
 .email input {
-    width: 315px;
+    width: 320px;
     height: 75px;
+    padding-left:70px;
     margin-right: 25px;
-    padding-left: 70px;
 }
 
 .email label {
-    position: relative;
+    position: absolute;
+    left: 25px;
+    top: 25px;
 }
 
 .email label img {
-    left: 60px;
-    top: 8px;
     position: relative;
     
 }
 
 .email a {
+    line-height: 80px;
     width: 190px;
-    height: 75px;
+    height: 80px;
+    float: right;
+    display: block;
 }
 
 /************* layout footer   ************/
@@ -497,4 +495,4 @@ footer {
     color: #6B708D;
 }
 
-/********** END lahyout footer ***********/
+/********** END layout footer ***********/
