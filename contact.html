@@ -6,55 +6,72 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Mid-term-project</title>
-    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="contact.css">
 </head>
 
 <body>
-    <header>
-        <img src="../Midterm-Project1/images/logos/circle.svg" alt="circle logo">
+    <header class="navbar">
+        <img class="logo" src="imagesmid/logos/circle.svg" alt="circle logo">
         <nav>
             <ul>
                 <li><a href="home">Home</a></li>
-                <li><a href="projects">Projects</a></li>
-                <li><a href="services">services</a></li>
-                <li><a href="contact us">Contact Us</a></li>
+                <li class="p17"><a href="projects" class="p17">Projects</a></li>
+                <li><a href="services" class="p17">services</a></li>
             </ul>
         </nav>
+        <a class="contact button" href="#">Contact Us</a>
     </header>
-    <main>
-        <h1>Contact Us</h1>
-        <form>
-            <label for="full-name">Full name</label>
-            <input type="text" id="full-name" placeholder="Enter your full name" name="full-name" required>
-
-            <label for="email">Email</label>
-            <input type="email" id="email" placeholder="Enter your email address" name="email" required>
-
-            <label for="phone">Phone</label>
-            <input type="tel" id="phone" placeholder="Enter your phone number" name="phone" required>
-
-            <label for="message">Message</label>
-            <textarea id="message" name="message" rows="5 required"></textarea>
-
-            <button type="submit">submit</button>
+    <section class="container">
+        <div>
+            <h1 class="h1b contact-title">Contact Us</h1>
+        </div>
+    </section>
+    <section class="container">
+        <form class="container">
+            <div class="form-div">
+                <label class="bt20" for="full-name">Full name*</label>
+                <input class="form-input" type="text" id="full-name" placeholder="Enter your full name" name="full-name"
+                    required>
+            </div>
+                <div class="form-dv">
+                    <div class="form-div">
+                        <label class="bt20" for="email">Email</label>
+                        <input class="form-input" type="email" id="email" placeholder="Enter your email address"
+                            name="email" required>
+                    </div>
+                    <div class="form-div">
+                        <label class="bt20" for="phone">Phone</label>
+                        <input class="form-input" type="tel" id="phone" placeholder="Enter your phone number" name="phone"
+                            required>
+                    </div>
+                </div>
+            <div class="form-div">
+                <label class="bt20" for="message">Message</label>
+                <textarea id="message" name="message" rows="5 required"></textarea>
+            </div>
+            <button class="button button-contact" type="submit">Submit</button>
         </form>
+    </section>
     </main>
 </body>
 <footer>
-    <div>
-        <img src="/images/logos/circle.svg" alt="Circle logo">
-        <p>2972 Westheimer Rd. Santa Ana, <br> Illinois 85486</p>
-    </div>
-    <div>
-        <ul>
-            <li><a href="#">Team</a></li>
-            <li><a href="#">Services</a></li>
-            <li><a href="#">About Us</a></li>
-            <li><a href="#">Press</a></li>
-            <li><a href="#">Projects</a></li>
-            <li><a href="#">Privacy Policy</a></li>
-        </ul>
-    </div>
+    <section class="footer-bar">
+        <div class="logo-footer">
+            <img src="imagesmid/logos/circle.svg" alt="Circle logo">
+            <p class="p17">2972 Westheimer Rd. Santa Ana, <br> Illinois 85486</p>
+        </div>
+        <div class="links">
+            <ul>
+                <li><a href="#">Team</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Press</a></li>
+                <li><a href="#">Projects</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+            </ul>
+        </div>
+    </section>
 </footer>
 
 </html>

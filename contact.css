@@ -1,0 +1,42 @@
+.contact-title {
+    width: 530px;
+    height: 70px;
+    margin-top: 140px;
+    margin-bottom: 80px;
+}
+
+.form-div {
+    height: 110px;
+    display: flex;
+    flex-direction: column;
+}
+
+.form-input {
+    height: 70px;
+    margin-top: 10px;
+    margin-bottom: 40px;
+}
+
+.form-textarea {
+    height: 200px;
+    margin-top: 10px;
+    margin-bottom: 40px;
+}
+
+.form-dv {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 1100px;
+}
+
+.form-dv input {
+    width: 530px;
+    height: 70px;
+}
+
+.button-contact {
+    width: 1100px;
+    height: 80px;
+    margin-top: 40px;
+}
