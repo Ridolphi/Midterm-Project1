@@ -88,6 +88,10 @@ header img {
     width: 61px;
 }
 
+.menu-toggle {
+    display: none;
+}
+
 .navbar {
     display: flex;
     justify-content: space-between;
@@ -108,8 +112,6 @@ nav ul {
     width: 100%;
     gap: 60px;
 }
-
-/****************** ************/
 
 main {
     width: 1440px;
@@ -200,8 +202,6 @@ main {
     height: 30px;
 }
 
-/***************/
-
 .projects {
     width: 1100px;
     height: 560px;
@@ -216,6 +216,7 @@ main {
 
 .projects figure {
     margin: 0;
+    /*display: flex */
 }
 
 .projects figure img {
@@ -226,6 +227,8 @@ main {
 .projects figcaption {
     background-color: #FFFFFF;
     width: 340px;
+    /*margin: 0
+    display: flex */
     height: 240px;
     position: absolute;
     margin: 0;
@@ -246,7 +249,7 @@ main {
     background-size: cover;
     width: 1320px;
     height: 632px;
-    margin: 200PX auto;
+    margin: 200px auto;
     position: relative;
 }
 
@@ -486,7 +489,17 @@ footer {
 
 /***************************************** media querye **************************************************************************/
 
+
+
 @media (max-width: 767px) {
+
+    .button {
+        font-size: 14px;
+        width: 100px;
+        text-align: center;
+        line-height: 40px;
+    }
+
     .container {
         width: 100%;
         margin: 0;
@@ -499,6 +512,7 @@ footer {
     }
 
     header img {
+        margin-left: 40px;
         width: 61px;
     }
 
@@ -509,21 +523,51 @@ footer {
 
     }
 
-        nav ul {
+    .navbar a {
+        width: 110px;
+    }
+
+    .navbar nav ul {
         width: 100%;
-        gap: 10px;
+        margin: 16px 0;
+        gap: 0;
+        display: none;
+    }
+
+    .navbar nav ul.open {
+        display: block;
+        position: absolute;
+        left: 0;
+        top: 40px;
+    }
+
+    .menu-toggle {
+        display: block;
+        position: absolute;
+        top: 8px;
+        left: 0;
+        padding: 10px;
+        background-color: #333;
+        color: #fff;
+        border: none;
+        cursor: pointer;
+    }
+
+    .menu-toggle:focus {
+        outline: none;
     }
 
     main {
         width: 100%;
-        margin:0;
+        margin: 0;
 
     }
 
     .banner {
+        display: block;
         width: 100%;
-        height: 350px;
-        margin:0;
+        height: auto;
+        margin: 0;
         padding-top: 100px;
     }
 
@@ -533,10 +577,15 @@ footer {
         margin-top: 20px;
     }
 
+    .bannertext .h1b {
+        font-size: 37px;
+        margin: 0;
+    }
+
     .bannertext p {
         margin-top: 15px;
         width: 100%;
-        height: 40px;
+        height: auto;
     }
 
     .bannertext-footer {
@@ -546,25 +595,33 @@ footer {
     }
 
     .bannerimage {
-        height: 315px;
+        position: relative;
+        background-size: cover;
+        display: block;
+        height: 440px;
         width: 100%;
- }
+        margin: 60px 0;
+    }
 
     .bannerimage img:first-child {
-        width: 100%;
-        height: 335px;
+        position: absolute;
+        width: 58%;
+        height: auto;
+        right: 215px;
     }
 
     .bannerimage img:last-child {
-        width: 100%;
-        height: 140px;
-        top: 190px;
-     }
+        position: absolute;
+        width: 55%;
+        height: auto;
+        top: 315px;
+        left: 215px;
+    }
 
     .clients {
         width: 100%;
-        margin:0;
-        padding: 50px 0 100px 0;
+        margin: 0;
+        padding: 0;
     }
 
     .clients-div {
@@ -579,8 +636,9 @@ footer {
 
     .projects {
         width: 100%;
-        height: 230px;
-        margin: 0;  
+        height: auto;
+        margin: 0;
+        display: block;
     }
 
     .projects div {
@@ -589,256 +647,220 @@ footer {
 
     .projects figure {
         margin: 0;
+        display: flex;
     }
 
     .projects figure img {
         width: 100%;
-        height: 120px;
+        height: auto;
     }
 
     .projects figcaption {
         width: 100%;
-        height: 120px;
         margin: 0;
+        position: relative;
+        height: 150px;
+        margin-bottom: 35px;
+
     }
 
     .projects figcaption h4 {
-        margin:0;
+        margin: 0;
+        padding: 10px;
     }
 
-    .projects figcaption p,
+    .projects figcaption p {
+        margin: 0;
+        padding: 10px;
+        padding-bottom: 50px;
+    }
+
     .projects figcaption a {
-        margin:0;
+        margin-left: ;
+        text-decoration: none;
     }
 
     .testimony {
         width: 100%;
-        height: 315px;
+        height: 175px;
         display: block;
-    }
-
-    .testimony h3 {
-        height: 12px;
-        line-height: 11px;
-        padding: 32px 0 12px;
-    }
-
-    .testimony p {
-        font-size: 12px;
         margin: 0;
     }
 
-    .testimony figure {
-        width: 176px;
-        margin: 80px auto;
+    .testimony h3 {
+        padding:0;
+        font-size: 22px;
+        margin: 0;
     }
 
-    .testimony figure img {
-        width: 20px;
-        height: 20px;
-        border-radius: 50%;
+    .testimony p {
+        font-size: 14px;
+        margin: 10px;
+    }
+
+    .testimony figure {
+        width: 165px;
+        margin: 0 auto;
     }
 
     .testimony figcaption {
-        width: 60px;
-        padding: 5px 0 0 5px;
+        width: auto;
+        padding: 10px 0 0 5px;
     }
 
     .testimony h5 {
+        font-size: 16px;
         margin: 0;
     }
 
     .testimony h6 {
         font-size: 13px;
-        color: #F4F6FC;
         margin: 0;
     }
 
     .memoji {
-        position: absolute;
-        top: 0;
-        left: 0;
         height: 100%;
         width: 100%;
     }
 
     .memoji img {
-        width: 150px;
-        height: 150px;
+        width: 50px;
+        height: 50px;
         position: absolute;
     }
 
     .memoji img:nth-child(1) {
-        top: 70px;
-        left: 70px;
+        top: -15;
+        left: -15;
     }
 
     .memoji img:nth-child(2) {
-        bottom: 70px;
-        left: 70px;
+        bottom: 140px;
+        left: 359px;
     }
 
     .memoji img:nth-child(3) {
-        top: 70px;
-        right: 70px;
+        top: 145px;
+        right: 335px;
     }
 
     .memoji img:nth-child(4) {
-        bottom: 70px;
-        right: 70px;
+        bottom: unset;
+        top: 140px;
+        left: 325px;
     }
 
     .services {
         width: 100%;
-        margin: 200px;
-        display: flex;
-        justify-content: space-between;
-        flex-wrap: wrap;
-    }
-
-    .services h3 {
-        flex-basis: 100%;
+        margin: 0;
+        display: block;
     }
 
     .services div {
-        background-color: white;
-        height: 380px;
-        width: 340px;
+        box-sizing: border-box;
+        padding: 12px 12px 22px 12px;
+        margin: 10px 0;
+        height: auto;
+        width: 100%;
     }
 
     .services figure {
-        margin: 32px;
-        width: 80px;
-        height: 80px;
+        margin: 15px;
+        width: 40px;
+        height: 40px;
         border-radius: 50%;
-        background-color: #ECF7FF;
     }
 
     .services img {
-        width: 30px;
-        height: 30px;
-        margin: 25px;
+        width: 15px;
+        height: 15px;
+        margin: 12px;
 
     }
 
     .services h4 {
-        width: 269px;
-        margin: 30px 0 20px 30px;
+        width: auto;
+        margin: 15px 0 15px 15px;
     }
 
     .services p {
-        width: 280px;
-        height: 90px;
-        margin: 20px 0 35px 30px;
+        width: auto;
+        height: auto;
+        margin: 10px 0 18px 15px;
     }
 
     .services a {
-        margin: 38px 30px;
-        text-decoration: none;
+        display: block;
+        margin: 17px 15px;
     }
 
     footer {
-        width: 1320px;
-        margin: 200px auto;
+        width: 100%;
+        margin: 50px auto;
     }
 
     .email {
         width: 100%;
-        height: 500px;
-        background-color: #FFC600;
-
+        height: auto;
     }
 
     .email h3 {
         text-align: center;
-        padding: 136px 0 0;
-    }
-
-    .email p {
-        text-align: center;
-
+        padding: 65px 0 0;
     }
 
     .email form {
-        position: relative;
         margin: 0 auto;
-        width: 612px;
-        overflow: hidden;
+        width: 100%;
     }
 
     .email input {
-        width: 320px;
-        height: 75px;
-        padding-left: 70px;
-        margin-right: 25px;
+        width: 100%;
+        height: 32px;
+        padding-left: 350px;
+        margin-right: 12px;
     }
 
     .email label {
-        position: absolute;
-        left: 25px;
-        top: 25px;
-    }
-
-    .email label img {
-        position: relative;
-
+        left: 12px;
+        top: 12px;
     }
 
     .email a {
-        line-height: 80px;
-        width: 190px;
-        height: 80px;
-        float: right;
-        display: block;
+        line-height: 40px;
+        width: 100%;
+        height: 40px;
     }
 
     .footer-bar {
-        display: flex;
-        justify-content: space-around;
+        display: block;
         width: 100%;
-        margin: 200px 0 100px;
+        margin: 0;
     }
 
     .logo-footer {
-        width: 145px;
-        height: 112px;
+        width: 72px;
+        height: 55px;
     }
 
     .logo-footer img {
-        width: 100px;
-        height: 30px;
+        width: 50px;
+        height: 15px;
     }
 
     .logo-footer p {
-        margin-top: 30px;
-        width: 260px;
-        height: 50px;
-        line-height: 150%;
+        margin-top: 15px;
+        width: 130px;
+        height: 25px;
+        line-height: 75%;
     }
 
     .links {
-        width: 435px;
-        height: 112px;
+        width: 100%;
+        height: 60px;
     }
 
     .links ul {
         width: 100%;
-        display: grid;
-        justify-items: start;
-        grid-template-columns: repeat(3, 1fr);
-        grid-template-rows: repeat(2, 1fr);
-        grid-gap: 60px;
-        line-height: 95%;
     }
-
-    .links ul li {
-        list-style: none;
-        text-align: center;
-    }
-
-    .links ul li a {
-        text-decoration: none;
-        color: #6B708D;
-    }
-
 }

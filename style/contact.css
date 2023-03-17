@@ -6,7 +6,6 @@
 }
 
 .form-div {
-    height: 110px;
     display: flex;
     flex-direction: column;
 }
@@ -15,13 +14,12 @@
     height: 70px;
     margin-top: 10px;
     margin-bottom: 40px;
+    background-color: rgba(107, 112, 141, 0.1);
+    border-style: none;
+    box-sizing: border-box;
+    padding-left: 10px;
 }
 
-.form-textarea {
-    height: 200px;
-    margin-top: 10px;
-    margin-bottom: 40px;
-}
 
 .form-dv {
     display: flex;
@@ -32,7 +30,15 @@
 
 .form-dv input {
     width: 530px;
-    height: 70px;
+}
+
+.form-textarea {
+    height: 200px;
+    margin-top: 10px;
+    margin-bottom: 40px;
+    background-color: rgba(107, 112, 141, 0.1);
+    border-style: none;
+    padding-left: 10px;
 }
 
 .button-contact {
@@ -50,35 +56,4 @@
 .navbar nav .menu-toggle {
     display: block;
   }
-
-
-
-/*****    media query
-
-  .navbar nav ul.open {
-    display: block;
-  }
-
-  .menu-toggle {
-    position: absolute;
-    top: 0; 
-    right: 0; 
-    padding: 10px;
-    background-color: #333; 
-    color: #fff; 
-    border: none;
-    cursor: pointer;
-}
-
-.menu-toggle:focus {
-    outline: none;
-}
-
-
-  @media (max-width: 768px) {
-    .navbar nav ul {
-     display: none;
-    }
-
-**/
 
