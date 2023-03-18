@@ -1,0 +1,76 @@
+.contact-title {
+    width: 530px;
+    height: 70px;
+    margin-top: 140px;
+    margin-bottom: 80px;
+}
+
+.form-div {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-input {
+    height: 70px;
+    margin-top: 10px;
+    margin-bottom: 40px;
+    background-color: rgba(107, 112, 141, 0.1);
+    border-style: none;
+    box-sizing: border-box;
+    padding-left: 10px;
+}
+
+
+.form-dv {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 1100px;
+}
+
+.form-dv input {
+    width: 530px;
+}
+
+.form-textarea {
+    height: 200px;
+    margin-top: 10px;
+    margin-bottom: 40px;
+    background-color: rgba(107, 112, 141, 0.1);
+    border-style: none;
+    padding-left: 10px;
+}
+
+
+/***************************************** media querye **************************************************************************/
+
+
+@media (max-width: 767px) {
+
+    .contact-title {
+      margin-top: 125px;
+      text-align: center;
+      width: auto;
+    }
+
+   .form-dv {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .form-dv input {
+        width: auto;
+    }
+
+    .form-textarea {
+       padding: 10px;
+    }
+
+    .button-contact {
+        width: 100%;
+        height: 70px;
+        margin-top: 15px;
+    }
+
+}
