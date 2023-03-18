@@ -21,13 +21,14 @@
     position: absolute;
     top: 0;
     left: 0;
-    
+
 }
+
 .simplify-img img:first-child {
     filter: blur(40px);
     top: 36px;
     left: 14px;
-    
+
 }
 
 .simplify-text {
@@ -36,10 +37,47 @@
     margin-bottom: 113px;
 }
 
-/*******************/
-
 .footer-services {
     margin: 0 auto;
 }
 
+/***************************************** media querye **************************************************************************/
 
+
+
+@media (max-width: 767px) {
+
+    .container h1 {
+        font-size: 55px;
+        text-align: center;
+    }
+
+    .simplify-img {
+        height: 300px;
+        margin-bottom: 85px;
+    }
+
+
+    .simplify {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .simplify-img img {
+        width: 400px;
+        height: 300px;
+    }
+
+    .simplify-img img:first-child {
+        top: 30px;
+        left: 30x;
+
+    }
+
+    .simplify-text {
+        width: auto;
+        line-height: 180%;
+        margin-bottom: 115px;
+    }
+
+}

@@ -497,7 +497,7 @@ footer {
         font-size: 14px;
         width: 100px;
         text-align: center;
-        line-height: 40px;
+        line-height: 50px;
     }
 
     .container {
@@ -547,8 +547,8 @@ footer {
         top: 8px;
         left: 0;
         padding: 10px;
-        background-color: #333;
-        color: #fff;
+        background-color: none;
+        color: #072AC8;
         border: none;
         cursor: pointer;
     }
@@ -661,6 +661,7 @@ footer {
         position: relative;
         height: 150px;
         margin-bottom: 35px;
+        padding-bottom: 10px;
 
     }
 
@@ -676,7 +677,7 @@ footer {
     }
 
     .projects figcaption a {
-        margin-left: ;
+        margin-left: 10px;
         text-decoration: none;
     }
 
@@ -688,66 +689,50 @@ footer {
     }
 
     .testimony h3 {
-        padding:0;
+        padding: 0;
         font-size: 22px;
         margin: 0;
+        line-height: 55px;
     }
 
     .testimony p {
-        font-size: 14px;
-        margin: 10px;
+        font-size: 15px;
+        margin: 10px 0 0;
     }
 
+     
     .testimony figure {
-        width: 165px;
+        width: 100%;
         margin: 0 auto;
+        display: flex;
+    }
+
+    .testimony figure img {
+        width: 45px;
+        height: 44px;
+        margin-top: 16px;
+        margin-left: 135px;
+        text-align: center;
     }
 
     .testimony figcaption {
         width: auto;
-        padding: 10px 0 0 5px;
+        padding: 0;
+        margin: 25px 5px;
     }
 
     .testimony h5 {
-        font-size: 16px;
-        margin: 0;
-    }
-
-    .testimony h6 {
         font-size: 13px;
         margin: 0;
     }
 
+    .testimony h6 {
+        font-size: 10px;
+        margin: 0;
+    }
+
     .memoji {
-        height: 100%;
-        width: 100%;
-    }
-
-    .memoji img {
-        width: 50px;
-        height: 50px;
-        position: absolute;
-    }
-
-    .memoji img:nth-child(1) {
-        top: -15;
-        left: -15;
-    }
-
-    .memoji img:nth-child(2) {
-        bottom: 140px;
-        left: 359px;
-    }
-
-    .memoji img:nth-child(3) {
-        top: 145px;
-        right: 335px;
-    }
-
-    .memoji img:nth-child(4) {
-        bottom: unset;
-        top: 140px;
-        left: 325px;
+        display: none;
     }
 
     .services {
@@ -791,7 +776,7 @@ footer {
 
     .services a {
         display: block;
-        margin: 17px 15px;
+        margin: 40px 15px 0;
     }
 
     footer {
@@ -806,61 +791,74 @@ footer {
 
     .email h3 {
         text-align: center;
-        padding: 65px 0 0;
+        padding-top:25px;
+        margin: 0;
+        font-size: 25px;
+    }
+
+    .email p {
+        font-size: 18px;
     }
 
     .email form {
         margin: 0 auto;
         width: 100%;
+        display: flex;
     }
 
     .email input {
         width: 100%;
-        height: 32px;
-        padding-left: 350px;
-        margin-right: 12px;
+        height: 40px;
+        padding: 0 40px;
+        margin: 15px 0 30px 15px;
+        border-style: none;
     }
-
+    
     .email label {
-        left: 12px;
-        top: 12px;
+        left: 20px;
+        top: 19px;
     }
 
     .email a {
         line-height: 40px;
-        width: 100%;
+        width: 35%;
         height: 40px;
+        margin: 15px;
     }
 
     .footer-bar {
         display: block;
         width: 100%;
-        margin: 0;
+        margin: 0 auto;
+        padding-top: 85px;
     }
 
     .logo-footer {
-        width: 72px;
-        height: 55px;
+        height: 0;
+        display: flex;
+        flex-direction: column;
     }
 
     .logo-footer img {
-        width: 50px;
-        height: 15px;
+        width: 60px;
+        margin: 0;
+        
     }
 
     .logo-footer p {
-        margin-top: 15px;
-        width: 130px;
-        height: 25px;
-        line-height: 75%;
-    }
-
-    .links {
-        width: 100%;
-        height: 60px;
+        margin: 15px 0;
+        line-height: 160%;
+        font-size: 10px;
+        width: 135px;
     }
 
     .links ul {
-        width: 100%;
+        width: 205px;
+        padding-left: 180px;
+        padding-top: 25px;
+        font-size: 11px;
+        row-gap: 10px;
+        column-gap: 0;
+
     }
 }
